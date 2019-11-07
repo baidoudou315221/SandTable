@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainPageActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/sandGreenBack"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/sandGray"
+        app:tabIndicatorColor="@color/sandGreenWord">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSeek"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/Login_text_style" />
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabChange"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            style="@style/Login_text_style"/>
+    </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>
