@@ -48,7 +48,7 @@ public class MainPageActivity extends FragmentActivity {
                         tab.setText("调节数据");
                         break;
                 }
-                Log.d("tablayout------->",position.toString());
+                Log.d("tabLayout------->",position.toString());
 
             }
 

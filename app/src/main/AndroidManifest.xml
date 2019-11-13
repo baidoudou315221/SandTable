@@ -4,13 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:label="@string/app_name"
         android:icon="@drawable/sand_icon"
+        android:label="@string/app_name"
         android:roundIcon="@color/sandWhite"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.sandtable.MainPageActivity"></activity>
-        <activity android:name="com.example.sandtable.MainActivity">
+        <activity android:name=".MainPageActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
